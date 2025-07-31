@@ -10,8 +10,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("خدماتنا 🛠️", callback_data='services_menu')]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
-       await update.message.reply_text("👋 أهلاً بك في Mashro3y\\+! اختر من القائمة:", reply_markup=reply_markup, parse_mode="MarkdownV2")
-
+    await update.message.reply_text("👋 أهلاً بك في Mashro3y\\+! اختر من القائمة:", reply_markup=reply_markup, parse_mode="MarkdownV2")
 
 async def services_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
